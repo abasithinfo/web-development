@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+	HTML Form Validation Assessment
+	</title>
+  </head>
+  <body>
+    <form>
+        <fieldset> 
+			<legend>Sample Registration Form</legend>
+            <table >
+                <tr>
+                    <td>Name:</td>
+                    <td><input type="text" name="student_name" required /></td>
+                <br>
+                </tr>
+                <tr>
+                    <td>Email:</td>
+                    <td><input type="email" name="student_email" required /></td>
+                </tr>
+                <tr>
+                    <td>Password:</td>
+                    <td><input type="password" name="student_password" required /></td>
+                </tr>
+                <tr>
+                    <td>Tel:</td>
+                    <td><input type="tel" name="student_tel"  pattern="[0-9]{10}" required /></td>
+                </tr>
+            </table>
+			<br>
+			<input type="submit" value="Submit"/>
+        </fieldset>
+    </form>
+  </body>
+</html>
